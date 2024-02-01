@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>White Board</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="./index.js" defer></script>
+</head>
+<body>
+  <div class="main-container">
+    <div class="top-section">
+      <div class="logo">
+        <img src="./assets/white-board-logo.webp" height="70" width="70" loading="eager" alt="white board logo">
+      </div>
+      <div class="menu">
+        <div class="title" id="sheet-title" contenteditable="true"></div>
+        <div class="menu-bar">
+          <div>File</div>
+          <div>Edit</div>
+          <div>View</div>
+          <div>Help</div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-section">
+      <div class="side-menu" id="side-menu">
+        <span class="material-icons" data-name="pen">draw</span>
+        <span class="material-icons" data-name="triangle">change_history</span>
+        <span class="material-icons" data-name="rectangle">rectangle</span>
+        <span class="material-icons" data-name="circle">brightness_1</span>
+        <input type="color" id="curr_color" class="curr_color" value="#202020">
+        <span data-name="eraser">
+          <svg data-name="eraser" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M690-240h190v80H610l80-80Zm-500 80-85-85q-23-23-23.5-57t22.5-58l440-456q23-24 56.5-24t56.5 23l199 199q23 23 23 57t-23 57L520-160H190Zm296-80 314-322-198-198-442 456 64 64h262Zm-6-240Z"/></svg>
+        </span>
+      </div>
+    </div>
+    <div class="canvas-area" id="canvas-area" >
+      <canvas id="myCanvas"></canvas>
+    </div>
+  </div>
+</body>
+</html>

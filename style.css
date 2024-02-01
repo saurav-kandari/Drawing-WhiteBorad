@@ -1,0 +1,53 @@
+.main-container{
+  .top-section{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    padding: 10px;
+    background: aliceblue;
+    .menu{
+      padding-top: 5px;
+      .title{
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI Variable", "Segoe UI", system-ui, ui-sans-serif, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+      font-size: 18px;
+      }
+      .menu-bar{
+        display: flex;
+        flex-direction: row;
+        padding-top: 15px;
+        gap:20px ;
+      }
+    }
+  }
+  .bottom-section{
+    float: left;
+    .side-menu{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+      width: 85px;
+      gap:30px ;
+      padding-left: 10px;
+      padding-right: 15px;
+      padding-bottom: 30px;
+      padding-top: 30px;
+      background: #afd0ed;
+      margin-top: 130px;
+      cursor: pointer;
+      .curr_color{
+        width: 30px;
+        padding: 0px !important;
+      }
+    }
+    .side-menu>span:hover{
+      background-color: aquamarine;
+    }
+  }
+  .canvas-area{
+    float: right ;
+    height: 100vh;
+    width: 80vw ;
+    border: 1px solid black;
+    margin-top: 50px;
+  }
+}
